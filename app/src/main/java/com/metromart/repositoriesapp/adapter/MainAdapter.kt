@@ -31,10 +31,6 @@ class MainAdapter : ListAdapter<Repository, MainAdapter.RepositoryViewHolder>(di
         fun bind(item: Repository) {
             with(item) {
                 binding.apply {
-                    layoutImageOwner.setRandomColor()
-                    imageOwner.roundedImage(url = owner.avatarUrl)
-
-                    textFullName.text = fullName
                     textName.text = name.capitalize()
                     textDescription.text = description
                 }
