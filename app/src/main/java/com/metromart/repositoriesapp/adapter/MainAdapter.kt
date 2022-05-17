@@ -9,8 +9,6 @@ import com.metromart.repositoriesapp.R
 import com.metromart.repositoriesapp.databinding.ItemRepositoryBinding
 import com.metromart.repositoriesapp.domain.Repository
 import com.metromart.repositoriesapp.extensions.capitalize
-import com.metromart.repositoriesapp.extensions.roundedImage
-import com.metromart.repositoriesapp.extensions.setRandomColor
 
 class MainAdapter : ListAdapter<Repository, MainAdapter.RepositoryViewHolder>(diffCallBack) {
 
