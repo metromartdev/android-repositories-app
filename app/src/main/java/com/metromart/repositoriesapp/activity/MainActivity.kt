@@ -2,9 +2,11 @@ package com.metromart.repositoriesapp.activity
 
 import android.os.Bundle
 import android.view.View
+import android.widget.LinearLayout
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DividerItemDecoration
 import com.metromart.repositoriesapp.adapter.MainAdapter
 import com.metromart.repositoriesapp.databinding.ActivityMainBinding
 import com.metromart.repositoriesapp.extensions.setCustomColorSchemeColors
@@ -51,6 +53,7 @@ class MainActivity : AppCompatActivity() {
             swipeRefresh.setCustomColorSchemeColors()
             recyclerview.apply {
                 adapter = mainAdapter
+                addItemDecoration(DividerItemDecoration(context, LinearLayout.VERTICAL))
             }
         }
     }
